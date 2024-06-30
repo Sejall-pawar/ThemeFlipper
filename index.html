@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ThemeFlipper</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light" id="main-body">
+    <div class="btn-container">
+        <img src="light.jpg" alt="light" class="btn-img" onclick="darkmode()" >
+        <img src="dark.jpg" alt="dark" class="btn-img" onclick="lightmode()">
+    </div>
+    <h1 class="header-name">ThemeFlipper</h1>
     
+    <div class="img-container">
+         <img src="light-bg.jpg" alt="light" class="img-front" id="img-mode">
+    </div>
+
+    <script>
+        function lightmode(){
+            const dark = document.getElementById("img-mode")
+            dark.src = "./darkh-bg.jpg"
+
+            const bgdark = document.getElementById("main-body")
+            bgdark.classList.remove("bg-light")
+            bgdark.classList.add("bg-dark")
+        }
+        function darkmode(){
+            const light = document.getElementById("img-mode")
+            light.src = "./light-bg.jpg"
+
+            const bglight = document.getElementById("main-body")
+            bglight.classList.remove("bg-dark")
+            bglight.classList.add("bg-light")
+        }
+    </script>
 </body>
 </html>

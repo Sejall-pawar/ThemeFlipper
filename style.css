@@ -1,0 +1,29 @@
+.bg-dark{
+    background-color: #00001a;
+    color: white;
+}
+
+.bg-light{
+    color: black;
+    background-color: #ffb84d;
+}
+.header-name{
+    text-align: center;
+}
+
+.img-front{
+    height: 600px;
+    width: 500px;
+    display: block;
+    margin: 30px auto;
+}
+
+.btn-container{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-img{
+    height: 25px;
+}
